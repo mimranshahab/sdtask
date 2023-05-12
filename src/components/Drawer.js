@@ -1,23 +1,19 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import "../css/my-projects-overview.css";
 
-function Drawer({ isOpen }) {
-  // const drawerStyles = {
-  //   boxSizing: "border-box",
-  //   position: "absolute",
-  //   width: "212px",
-  //   left: "0px",
-  //   top: "0px",
-  //   bottom: "0px",
-  //   background: "#FFFFFF",
-  //   borderRight: "1px solid rgba(0, 0, 0, 0.1)",
-  // };
+function Drawer({ isOpen }) {  
 
-  // return <div style={drawerStyles}>This is the drawer component.</div>;
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate('/calculator');
+  }
+
   return (
     <div
       className="my-projects-overview-sidebar-a"
-      style={{ left: isOpen ? 0 : -300 }}
+      style={{ left: isOpen ? 0 : -300, cursor:"pointer" }}
     >
       <div className="my-projects-overview-avatar-name">
         <div className="my-projects-overview-bye-wind"></div>
@@ -56,8 +52,8 @@ function Drawer({ isOpen }) {
                 alt="Dot2I158"
                 className="my-projects-overview-dot21"
               />
-              <span className="my-projects-overview-text008 14Regular">
-                <span>Projects</span>
+              <span className="my-projects-overview-text008 14Regular" onClick={handleClick}>
+                <span>Calculator</span>
               </span>
             </div>
           </div>
