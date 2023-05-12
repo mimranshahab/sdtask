@@ -1,8 +1,10 @@
 import React from 'react';
 import Drawer from './components/Drawer';
 import Header from './components/Header';
+import TopTab from './components/TopTab';
 import RightBar from './components/RightBar';
 import Block from './components/Block';
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <Drawer isOpen={true} />
       <Header/>
       <RightBar/>
+      <TopTab/>
       <Block/>
     </div>
   );
