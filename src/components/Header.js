@@ -3,8 +3,7 @@ import "../css/my-projects-overview.css";
 
 function Header() {
   return (
-    <div className="my-projects-overview-header-a">
-        hello abc 123
+    <div className="my-projects-overview-header-a">        
       <button className="my-projects-overview-icon-button">
         <button className="my-projects-overview-button">
           <img
@@ -36,6 +35,7 @@ function Header() {
         </button>
       </button>
       <div className="my-projects-overview-search">
+        
         <img
           src="../playground_assets/searchi158-dvgl.svg"
           alt="SearchI158"
